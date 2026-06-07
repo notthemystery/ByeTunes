@@ -12,6 +12,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Cd
+        run: cd MusicManager
+
       - name: Build (Release)
         run: swift build -c release
 

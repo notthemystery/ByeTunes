@@ -13,10 +13,10 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Cd
-        run: cd MusicManager
+        run: cd MusicManager && ls
 
       - name: Build (Release)
-        run: swift build -c release
+        run: swift build
 
       - name: Archive build products
         run: |

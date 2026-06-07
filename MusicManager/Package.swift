@@ -1,18 +1,16 @@
 import PackageDescription
 
 let package = Package(
-    name: "ByeTunes",
-    platforms: [
-        .iOS(.v15),
-        .macOS(.v12)
-    ],
+    name: "MusicManager",
     products: [
         .library(
-            name: "ByeTunes",
-            targets: ["ByeTunes"]),
+            name: "MusicManager",
+            targets: ["ByeTunes"]
+        ),
     ],
     targets: [
         .target(
-            name: "ByeTunes"),
+            name: "ByeTunes"
+        )
     ]
 )
